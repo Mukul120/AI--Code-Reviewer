@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* Hide Scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Remove border, outline, and background from react-simple-code-editor */
+.react-simple-code-editor, 
+.react-simple-code-editor textarea, 
+.react-simple-code-editor pre {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Ensure text is visible and looks proper */
+.react-simple-code-editor textarea {
+  caret-color: white !important; /* Adjust caret color if needed */
+}
