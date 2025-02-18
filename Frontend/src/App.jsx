@@ -30,7 +30,7 @@ function App() {
       // const response = await axios.post(process.env.PORT, { code })
       // const response = await axios.post("http://localhost:4000/ai/get-response", { code });
       // const response = await axios.post(process.env.REACT_APP_BACKEND_URL, { code });
-     const response = await axios.post(import.meta.env.VITE_BACKEND_URL, { code });
+     const response = await axios.post("https://ai-code-reviewer-backend-yr3s.onrender.com/ai/get-response", { code });
 
       setAiResponse(response.data)
     } catch (error) {
